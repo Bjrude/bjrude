@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         h1, h2 {
-            color: #333;
+            color: #008080;
         }
 
         p {
@@ -19,6 +21,10 @@
 
         .contact-info {
             margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .skills {
@@ -27,9 +33,29 @@
 
         #toggleButton {
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #008080;
             color: #fff;
             cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #toggleButton:hover {
+            background-color: #006666;
+        }
+
+        #skillsSection {
+            display: block;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #008080;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
     </style>
     <title>Brandon Rude - Resume</title>
@@ -46,6 +72,7 @@
     </div>
 
     <h2>Skills</h2>
+    <button id="toggleButton" onclick="toggleSkills()">Toggle Skills</button>
     <div id="skillsSection">
         <p class="skills">Java, HTML, CSS, JavaScript</p>
         <p class="skills">Web Design</p>
@@ -57,6 +84,5 @@
 
     <h2>Education</h2>
     <p>Bachelor's Degree in Computer Information Systems - Saginaw Valley State University</p>
-
 </body>
 </html>
